@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="VJ Smart Solutions — Professional Electrical, Solar, CCTV, Networking & Plumbing services in Rajasthan, India. Quality installations for homes, offices & industries. Call +91 8104898037.">
+<meta name="keywords" content="electrical services, solar panel installation, CCTV security, networking, Rajasthan, VJ Smart Solutions">
+
+<title>VJ Smart Solutions | Professional Electrical, Solar & Networking Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0d1117;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#ffd000;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#ffd000;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+color:#ffd000;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:30px;
+line-height:1.7;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 35px;
+border:none;
+border-radius:40px;
+font-size:16px;
+cursor:pointer;
+font-weight:600;
+transition:0.3s;
+text-decoration:none;
+}
+
+.btn-primary{
+background:#ffd000;
+color:black;
+}
+
+.btn-primary:hover{
+transform:translateY(-5px);
+}
+
+.btn-secondary{
+background:transparent;
+border:2px solid #ffd000;
+color:#ffd000;
+}
+
+.btn-secondary:hover{
+background:#ffd000;
+color:black;
+}
+
+/* SECTION */
+
+section{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:60px;
+color:#ffd000;
+}
+
+/* SERVICES */
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:#161b22;
+padding:40px 30px;
+border-radius:20px;
+text-align:center;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 40px rgba(255,208,0,0.2);
+}
+
+.service-card i{
+font-size:55px;
+color:#ffd000;
+margin-bottom:20px;
+}
+
+.service-card h3{
+margin-bottom:15px;
+font-size:24px;
+}
+
+/* PRODUCTS */
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:#161b22;
+border-radius:20px;
+overflow:hidden;
+transition:0.4s;
+}
+
+.product-card:hover{
+transform:scale(1.03);
+}
+
+.product-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.product-card h3{
+padding:20px 20px 10px;
+}
+
+.product-card p{
+padding:0 20px 25px;
+color:#ccc;
+}
+
+/* GALLERY */
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:20px;
+transition:0.4s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+/* COUNTER */
+
+.counter-section{
+background:#161b22;
+}
+
+.counter-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.counter-box h2{
+font-size:50px;
+color:#ffd000;
+margin-bottom:10px;
+}
+
+/* REVIEWS */
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.review-card{
+background:#161b22;
+padding:30px;
+border-radius:20px;
+}
+
+.review-card i{
+color:#ffd000;
+margin-bottom:20px;
+}
+
+.review-card h4{
+margin-top:20px;
+color:#ffd000;
+}
+
+/* CONTACT */
+
+.contact-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+align-items:center;
+}
+
+.contact-info h2{
+font-size:40px;
+margin-bottom:20px;
+color:#ffd000;
+}
+
+.contact-info p{
+margin-bottom:15px;
+line-height:1.8;
+}
+
+form{
+background:#161b22;
+padding:40px;
+border-radius:20px;
+}
+
+form input,
+form textarea{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+border:none;
+border-radius:10px;
+background:#0d1117;
+color:white;
+}
+
+form button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:40px;
+background:#ffd000;
+font-size:18px;
+font-weight:600;
+cursor:pointer;
+}
+
+/* DJ SECTION */
+
+.dj-section{
+  background: linear-gradient(135deg, #0d1117 0%, #1a0a2e 50%, #0d1117 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.dj-section::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 50%, rgba(138, 43, 226, 0.08) 0%, transparent 50%),
+              radial-gradient(circle at 80% 50%, rgba(255, 208, 0, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.dj-header{
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.dj-header .section-title{
+  background: linear-gradient(135deg, #ffd000, #ff6b35, #ffd000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+}
+
+.dj-header .dj-subtitle{
+  font-size: 18px;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* DJ Equalizer Animation */
+
+.dj-equalizer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.dj-equalizer .bar{
+  width: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to top, #ffd000, #ff6b35, #e040fb);
+  animation: equalize 1s ease-in-out infinite alternate;
+}
+
+.dj-equalizer .bar:nth-child(1){ height: 20px; animation-delay: 0s; }
+.dj-equalizer .bar:nth-child(2){ height: 35px; animation-delay: 0.1s; }
+.dj-equalizer .bar:nth-child(3){ height: 50px; animation-delay: 0.2s; }
+.dj-equalizer .bar:nth-child(4){ height: 30px; animation-delay: 0.3s; }
+.dj-equalizer .bar:nth-child(5){ height: 45px; animation-delay: 0.15s; }
+.dj-equalizer .bar:nth-child(6){ height: 25px; animation-delay: 0.25s; }
+.dj-equalizer .bar:nth-child(7){ height: 55px; animation-delay: 0.05s; }
+.dj-equalizer .bar:nth-child(8){ height: 40px; animation-delay: 0.35s; }
+.dj-equalizer .bar:nth-child(9){ height: 30px; animation-delay: 0.2s; }
+.dj-equalizer .bar:nth-child(10){ height: 50px; animation-delay: 0.1s; }
+.dj-equalizer .bar:nth-child(11){ height: 20px; animation-delay: 0.3s; }
+.dj-equalizer .bar:nth-child(12){ height: 45px; animation-delay: 0.15s; }
+
+@keyframes equalize{
+  0%{ transform: scaleY(0.3); }
+  50%{ transform: scaleY(1); }
+  100%{ transform: scaleY(0.6); }
+}
+
+/* DJ Service Packages */
+
+.dj-packages{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.dj-package-card{
+  background: rgba(22, 27, 34, 0.9);
+  border: 1px solid rgba(255, 208, 0, 0.15);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.dj-package-card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ffd000, #e040fb, transparent);
+  transition: 0.6s;
+}
+
+.dj-package-card:hover::before{
+  left: 100%;
+}
+
+.dj-package-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(255, 208, 0, 0.15), 0 0 40px rgba(224, 64, 251, 0.08);
+  border-color: rgba(255, 208, 0, 0.3);
+}
+
+.dj-package-card .dj-icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  font-size: 32px;
+}
+
+.dj-package-card:nth-child(1) .dj-icon{
+  background: linear-gradient(135deg, rgba(255, 208, 0, 0.2), rgba(255, 107, 53, 0.2));
+  color: #ffd000;
+}
+
+.dj-package-card:nth-child(2) .dj-icon{
+  background: linear-gradient(135deg, rgba(224, 64, 251, 0.2), rgba(255, 208, 0, 0.2));
+  color: #e040fb;
+}
+
+.dj-package-card:nth-child(3) .dj-icon{
+  background: linear-gradient(135deg, rgba(0, 188, 212, 0.2), rgba(224, 64, 251, 0.2));
+  color: #00bcd4;
+}
+
+.dj-package-card h3{
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.dj-package-card p{
+  color: #aaa;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.dj-package-card .dj-features{
+  list-style: none;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.dj-package-card .dj-features li{
+  padding: 8px 0;
+  color: #ccc;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.dj-package-card .dj-features li i{
+  color: #ffd000;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.dj-book-btn{
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+  border: 2px solid #ffd000;
+  color: #ffd000;
+  background: transparent;
+}
+
+.dj-book-btn:hover{
+  background: #ffd000;
+  color: #000;
+  box-shadow: 0 5px 25px rgba(255, 208, 0, 0.3);
+}
+
+.dj-package-card.featured{
+  border-color: rgba(255, 208, 0, 0.4);
+  background: linear-gradient(135deg, rgba(22, 27, 34, 0.95), rgba(26, 10, 46, 0.8));
+}
+
+.dj-package-card.featured .dj-badge{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #ffd000, #ff6b35);
+  color: #000;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dj-cta{
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.dj-cta p{
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.dj-cta .btn-primary{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Floating music notes */
+
+.music-note{
+  position: absolute;
+  font-size: 20px;
+  color: rgba(255, 208, 0, 0.15);
+  animation: floatNote 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.music-note:nth-child(1){ top: 10%; left: 5%; animation-delay: 0s; }
+.music-note:nth-child(2){ top: 30%; right: 8%; animation-delay: 2s; }
+.music-note:nth-child(3){ bottom: 20%; left: 10%; animation-delay: 4s; }
+.music-note:nth-child(4){ top: 60%; right: 5%; animation-delay: 1s; }
+
+@keyframes floatNote{
+  0%, 100%{ transform: translateY(0) rotate(0deg); opacity: 0.15; }
+  50%{ transform: translateY(-20px) rotate(15deg); opacity: 0.3; }
+}
+
+@media(max-width:768px){
+  .dj-packages{
+    grid-template-columns: 1fr;
+  }
+  .dj-header .dj-subtitle{
+    font-size: 15px;
+  }
+}
+
+/* FOOTER */
+
+footer{
+background:#0a0a0a;
+padding:40px 30px;
+text-align:center;
+color:#aaa;
+border-top:1px solid rgba(255,208,0,0.15);
+}
+
+footer p{
+margin-bottom:8px;
+}
+
+.footer-credit{
+margin-top:15px;
+font-size:14px;
+color:#666;
+}
+
+.footer-credit a{
+color:#ffd000;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.footer-credit a:hover{
+color:#fff;
+text-shadow:0 0 10px rgba(255,208,0,0.5);
+}
+
+/* NAV SOCIAL */
+
+.nav-social{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 20px;
+}
+
+.nav-social a{
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.nav-social a:hover{
+  color: #ffd000;
+  transform: scale(1.2);
+}
+
+/* FOOTER SOCIAL */
+
+.footer-social{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.footer-social a{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-social a:hover{
+  transform: translateY(-5px) scale(1.1);
+}
+
+.footer-social .social-whatsapp{
+  background: #25d366;
+}
+
+.footer-social .social-instagram{
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.footer-social .social-phone{
+  background: #ffd000;
+  color: #000;
+}
+
+/* FLOATING BUTTONS */
+
+.floating-socials{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+.floating-socials a{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.floating-socials a:hover{
+  transform: scale(1.15);
+}
+
+.floating-socials .float-whatsapp{
+  background: #25d366;
+}
+
+.floating-socials .float-instagram{
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+/* HAMBURGER MENU */
+
+.hamburger{
+display:none;
+flex-direction:column;
+gap:5px;
+cursor:pointer;
+background:none;
+border:none;
+padding:5px;
+z-index:1001;
+}
+
+.hamburger span{
+width:28px;
+height:3px;
+background:#ffd000;
+border-radius:3px;
+transition:0.3s;
+}
+
+.hamburger.active span:nth-child(1){
+transform:rotate(45deg) translate(5px,6px);
+}
+
+.hamburger.active span:nth-child(2){
+opacity:0;
+}
+
+.hamburger.active span:nth-child(3){
+transform:rotate(-45deg) translate(5px,-6px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:32px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+.section-title{
+font-size:28px;
+}
+
+nav{
+padding:15px 5%;
+}
+
+.hamburger{
+display:flex;
+}
+
+nav ul{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+background:rgba(13,17,23,0.97);
+backdrop-filter:blur(15px);
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:35px;
+z-index:1000;
+}
+
+nav ul.active{
+display:flex;
+}
+
+nav ul li a{
+font-size:24px;
+}
+
+.contact-container{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">VJ Smart Solutions</div>
+
+<ul id="navMenu">
+<li><a href="#home" onclick="closeMenu()">Home</a></li>
+<li><a href="#services" onclick="closeMenu()">Services</a></li>
+<li><a href="#products" onclick="closeMenu()">Products</a></li>
+<li><a href="#dj" onclick="closeMenu()">DJ Services</a></li>
+<li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
+<li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+</ul>
+
+<div class="nav-social">
+<a href="https://instagram.com/balaji_81048" target="_blank" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://wa.me/918104898037" target="_blank" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+<button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Complete Electrical, Networking & Solar Solutions</h1>
+
+<p>
+Professional Electrical, Plumbing, Solar & CCTV Services<br>
+for Residential, Commercial & Industrial Projects.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact" class="btn btn-primary">
+Get Free Quote
+</a>
+
+<a href="tel:+918104898037" class="btn btn-secondary">
+Call Now
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<i class="fa-solid fa-network-wired"></i>
+
+<h3>Networking & Hardware Installation</h3>
+<p>
+High quality Networking & Hardware Components — Switches, Operating Systems, Printers & Wiring installation for homes and businesses.
+</p>
+</div>
+
+<div class="service-card">
+<i class="fa-solid fa-bolt"></i>
+<h3>Electrical Wiring</h3>
+<p>
+Professional electrical wiring and maintenance services.
+</p>
+</div>
+
+<div class="service-card">
+<i class="fa-solid fa-video"></i>
+<h3>CCTV Security</h3>
+<p>
+Advanced CCTV camera and security surveillance systems.
+</p>
+</div>
+
+<div class="service-card">
+<i class="fa-solid fa-lightbulb"></i>
+<h3>Lighting Solutions</h3>
+<p>
+Modern indoor and outdoor lighting installation solutions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<h2 class="section-title">Products</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop" alt="Solar Panels - High efficiency premium solar panels">
+
+<h3>Solar Panels</h3>
+
+<p>
+High efficiency premium solar panels.
+</p>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200&auto=format&fit=crop" alt="Inverters - Premium inverter systems">
+
+<h3>Inverters</h3>
+
+<p>
+Premium inverter systems with long life support.
+</p>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Electrical Equipment - Switches, wires, fans and lights">
+
+<h3>Electrical Equipment</h3>
+
+<p>
+Switches, wires, fans, lights and more.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2 class="section-title">Project Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?q=80&w=1200&auto=format&fit=crop" alt="VJ Smart Solutions - Completed project 1">
+
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="VJ Smart Solutions - Completed project 2">
+
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop" alt="VJ Smart Solutions - Solar installation project">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="VJ Smart Solutions - Networking project">
+
+</div>
+
+</section>
+
+<!-- DJ SERVICES -->
+
+<section class="dj-section" id="dj">
+
+<!-- Floating music notes -->
+<span class="music-note"><i class="fa-solid fa-music"></i></span>
+<span class="music-note"><i class="fa-solid fa-music"></i></span>
+<span class="music-note"><i class="fa-solid fa-music"></i></span>
+<span class="music-note"><i class="fa-solid fa-music"></i></span>
+
+<div class="dj-header">
+
+<div class="dj-equalizer">
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+</div>
+
+<h2 class="section-title"><i class="fa-solid fa-headphones"></i> DJ & Sound Services</h2>
+
+<p class="dj-subtitle">
+Professional DJ & Sound System setup for every occasion — Weddings, Birthday Parties, Corporate Events & more. Premium sound quality guaranteed!
+</p>
+
+</div>
+
+<div class="dj-packages">
+
+<!-- Package 1: Birthday -->
+<div class="dj-package-card">
+
+<div class="dj-icon">
+<i class="fa-solid fa-cake-candles"></i>
+</div>
+
+<h3>Birthday Party DJ</h3>
+
+<p>Make your birthday celebrations unforgettable with our high-energy DJ setup and dazzling lights.</p>
+
+<ul class="dj-features">
+<li><i class="fa-solid fa-check"></i> Professional DJ Console</li>
+<li><i class="fa-solid fa-check"></i> LED & Laser Lights</li>
+<li><i class="fa-solid fa-check"></i> Premium Sound System</li>
+<li><i class="fa-solid fa-check"></i> Fog Machine Effect</li>
+<li><i class="fa-solid fa-check"></i> Custom Playlist</li>
+</ul>
+
+<a href="https://wa.me/918104898037?text=Hello%20VJ!%20I%20want%20to%20book%20DJ%20for%20Birthday%20Party" class="dj-book-btn" target="_blank">
+<i class="fa-brands fa-whatsapp"></i> Book Now
+</a>
+
+</div>
+
+<!-- Package 2: Wedding (Featured) -->
+<div class="dj-package-card featured">
+
+<span class="dj-badge">Most Popular</span>
+
+<div class="dj-icon">
+<i class="fa-solid fa-rings-wedding"></i>
+</div>
+
+<h3>Wedding DJ Setup</h3>
+
+<p>Grand wedding entertainment with full DJ setup, stage lighting, and sound for Sangeet, Mehendi & Reception.</p>
+
+<ul class="dj-features">
+<li><i class="fa-solid fa-check"></i> Full Stage DJ Setup</li>
+<li><i class="fa-solid fa-check"></i> Moving Head & Par Lights</li>
+<li><i class="fa-solid fa-check"></i> High Power Sound (5000W+)</li>
+<li><i class="fa-solid fa-check"></i> Fog & Cold Pyro Effects</li>
+<li><i class="fa-solid fa-check"></i> Wireless Mic for Anchoring</li>
+<li><i class="fa-solid fa-check"></i> Sangeet & Reception Music</li>
+</ul>
+
+<a href="https://wa.me/918104898037?text=Hello%20VJ!%20I%20want%20to%20book%20DJ%20for%20Wedding%20Event" class="dj-book-btn" target="_blank">
+<i class="fa-brands fa-whatsapp"></i> Book Now
+</a>
+
+</div>
+
+<!-- Package 3: Corporate -->
+<div class="dj-package-card">
+
+<div class="dj-icon">
+<i class="fa-solid fa-building"></i>
+</div>
+
+<h3>Corporate & Events</h3>
+
+<p>Professional sound and music management for corporate events, college functions & public gatherings.</p>
+
+<ul class="dj-features">
+<li><i class="fa-solid fa-check"></i> Conference Sound System</li>
+<li><i class="fa-solid fa-check"></i> Ambient Background Music</li>
+<li><i class="fa-solid fa-check"></i> Multi-Zone Audio Setup</li>
+<li><i class="fa-solid fa-check"></i> Wireless Microphones</li>
+<li><i class="fa-solid fa-check"></i> Event Music Management</li>
+</ul>
+
+<a href="https://wa.me/918104898037?text=Hello%20VJ!%20I%20want%20to%20book%20DJ%20for%20Corporate%20Event" class="dj-book-btn" target="_blank">
+<i class="fa-brands fa-whatsapp"></i> Book Now
+</a>
+
+</div>
+
+</div>
+
+<div class="dj-cta">
+<p>Custom packages available — Tell us your event details!</p>
+<a href="tel:+918104898037" class="btn btn-primary">
+<i class="fa-solid fa-phone"></i> Call for DJ Booking
+</a>
+</div>
+
+</section>
+
+<!-- COUNTER -->
+
+<section class="counter-section">
+
+<div class="counter-grid">
+
+<div class="counter-box">
+<h2>500+</h2>
+<p>Projects Completed</p>
+</div>
+
+<div class="counter-box">
+<h2>300+</h2>
+<p>Happy Clients</p>
+</div>
+
+<div class="counter-box">
+<h2>5+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="counter-box">
+<h2>24/7</h2>
+<p>Support</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section>
+
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+
+<p>
+Best electrical and solar service provider.
+Very professional work.
+</p>
+
+<h4>Rahul Sharma</h4>
+
+</div>
+
+<div class="review-card">
+
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+
+<p>
+Excellent solar installation service with good pricing.
+</p>
+
+<h4>Vikas Meena</h4>
+
+</div>
+
+<div class="review-card">
+
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+
+<p>
+Highly recommended for CCTV and wiring projects.
+</p>
+
+<h4>Amit Verma</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h2>Contact Us</h2>
+
+<p>
+<i class="fa-solid fa-phone"></i>
++91 8104898037
+</p>
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+support@vjsmartsolutions.com
+</p>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Rajasthan, India
+</p>
+
+<p>
+<a href="https://instagram.com/balaji_81048" target="_blank" style="color:#e040fb; text-decoration:none; transition:0.3s;">
+<i class="fa-brands fa-instagram"></i>
+@balaji_81048
+</a>
+</p>
+
+<p>
+We provide complete electrical and solar solutions
+for homes, shops, offices and industries.
+</p>
+
+</div>
+
+<form id="contactForm" onsubmit="sendToWhatsApp(event)">
+
+<input type="text" id="userName" placeholder="Your Name" required>
+
+<input type="email" id="userEmail" placeholder="Your Email" required>
+
+<input type="text" id="userPhone" placeholder="Phone Number" required>
+
+<textarea rows="5" id="userMessage" placeholder="Your Message"></textarea>
+
+<button type="submit">
+<i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 VJ Smart Solutions | All Rights Reserved
+</p>
+
+<div class="footer-social">
+<a href="https://instagram.com/balaji_81048" target="_blank" class="social-instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://wa.me/918104898037" target="_blank" class="social-whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="tel:+918104898037" class="social-phone" aria-label="Call Us"><i class="fa-solid fa-phone"></i></a>
+</div>
+
+<p class="footer-credit">
+Developed by <a href="../VSS Soft/index.html" target="_blank">VSS Soft</a> — Smart Software Solutions
+</p>
+
+</footer>
+
+<!-- WHATSAPP -->
+
+<div class="floating-socials">
+
+<a href="https://instagram.com/balaji_81048" target="_blank" class="float-instagram" aria-label="Follow on Instagram">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://wa.me/918104898037" target="_blank" class="float-whatsapp" aria-label="Chat on WhatsApp">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</div>
+
+<script>
+// Mobile Hamburger Menu
+function toggleMenu() {
+  document.getElementById('navMenu').classList.toggle('active');
+  document.getElementById('hamburger').classList.toggle('active');
+}
+
+function closeMenu() {
+  document.getElementById('navMenu').classList.remove('active');
+  document.getElementById('hamburger').classList.remove('active');
+}
+
+// Send Contact Form to WhatsApp
+function sendToWhatsApp(e) {
+  e.preventDefault();
+  
+  const name = document.getElementById('userName').value;
+  const email = document.getElementById('userEmail').value;
+  const phone = document.getElementById('userPhone').value;
+  const message = document.getElementById('userMessage').value;
+  
+  const whatsappMessage = 
+    `Hello VJ Smart Solutions!%0A%0A` +
+    `*Name:* ${name}%0A` +
+    `*Email:* ${email}%0A` +
+    `*Phone:* ${phone}%0A` +
+    `*Message:* ${message}`;
+  
+  const whatsappURL = `https://wa.me/918104898037?text=${whatsappMessage}`;
+  
+  window.open(whatsappURL, '_blank');
+  
+  document.getElementById('contactForm').reset();
+}
+
+// Scroll Animation - Fade in sections on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('section').forEach(section => {
+  section.style.opacity = '0';
+  section.style.transform = 'translateY(30px)';
+  section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  observer.observe(section);
+});
+</script>
+
+</body>
+</html>
